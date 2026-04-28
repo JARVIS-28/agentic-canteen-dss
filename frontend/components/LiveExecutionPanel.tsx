@@ -127,7 +127,7 @@ export function LiveExecutionPanel({
               </div>
             ) : (
               thoughts.map((t, i) => {
-                const meta = t.type === 'thought' ? (AGENT_META[t.data?.agent] || DEFAULT_META) : DEFAULT_META;
+                const meta = t.type === 'thought' && t.data?.agent ? (AGENT_META[t.data.agent] || DEFAULT_META) : DEFAULT_META;
                 const isError = t.type === 'error';
 
                 return (
