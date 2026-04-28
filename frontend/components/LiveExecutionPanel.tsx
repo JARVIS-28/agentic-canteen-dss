@@ -158,7 +158,7 @@ export function LiveExecutionPanel({
                             "text-sm font-bold leading-relaxed",
                             isError ? "text-rose-600" : "text-[var(--on-surface)]"
                           )}>
-                            {t.message || t.data?.content}
+                            {t.message || t.data?.thought}
                           </p>
                         </div>
                       </div>
