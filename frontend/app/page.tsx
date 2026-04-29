@@ -49,28 +49,28 @@ export default function HomePage() {
   const features = [
     { 
       title: "Forecasting Engine", 
-      desc: "XGBoost + LightGBM Fusion Model predicting demand with Bayesian Newsvendor logic and Adaptive Sigma uncertainty scaling.", 
+      desc: "High-precision AI predicting daily demand to optimize stock levels and minimize food waste.", 
       icon: TrendingUp, 
       color: "#ee8326",
       ref: "forecasting_agent.py"
     },
     { 
       title: "Risk Intelligence", 
-      desc: "Real-time Liquidity Guarding via MDP-based action approval and Workday Lockout protocols to protect operational cash flow.", 
+      desc: "Automated financial guard blocking risky procurement to ensure stable operational cash flow.", 
       icon: Shield, 
       color: "#374175",
       ref: "risk_agent.py"
     },
     { 
       title: "Telemetry Core", 
-      desc: "Fuzzy-Scout Trend Agent fusing Continuous Weather Scaling (+8%/°C) and Academic Calendar Pulses for high-fidelity demand sensing.", 
+      desc: "Smart signal scout tracking weather and campus events for hyper-accurate demand sensing.", 
       icon: Utensils, 
       color: "#8b8eaa",
       ref: "trend_agent.py"
     },
     { 
       title: "Atomic Execution", 
-      desc: "Zero-Latency Matrix Architect synchronizing neural agent thoughts for rapid operational intake and instant barcode parsing.", 
+      desc: "Real-time architect synchronizing inventory and barcode parsing for instant operational updates.", 
       icon: Layers, 
       color: "#ee8326",
       ref: "LiveExecutionPanel.tsx"

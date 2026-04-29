@@ -152,7 +152,7 @@ export default function Login() {
                  <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">forecasting_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Forecasting Engine</h3>
-               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">XGBoost-LGBM Fusion Model with Adaptive Sigma uncertainty scaling.</p>
+               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">High-precision AI predicting daily demand to optimize stock levels and minimize food waste.</p>
              </div>
              
              <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
@@ -163,7 +163,7 @@ export default function Login() {
                  <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">risk_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Risk Intelligence</h3>
-               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">MDP-based action approval and Workday Lockout protocols protecting liquidity.</p>
+               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Automated financial guard blocking risky procurement to ensure stable operational cash flow.</p>
              </div>
 
              <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
@@ -174,7 +174,7 @@ export default function Login() {
                  <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">trend_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Telemetry Core</h3>
-               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Fuzzy-Scout Agent fusing Continuous Weather Scaling and Calendar Pulses.</p>
+               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Smart signal scout tracking weather and campus events for hyper-accurate demand sensing.</p>
              </div>
 
              <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
@@ -185,7 +185,7 @@ export default function Login() {
                  <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">LiveExecutionPanel.tsx</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Atomic Execution</h3>
-               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Zero-Latency Matrix Architect synchronizing multi-agent consensus thoughts.</p>
+               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Real-time architect synchronizing inventory and barcode parsing for instant operational updates.</p>
              </div>
           </div>
         </motion.div>
