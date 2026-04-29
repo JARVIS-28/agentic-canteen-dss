@@ -7,6 +7,7 @@ import { API_BASE_URL } from '../../lib/api';
 import { cn } from '../../lib/utils';
 import { LogIn, UserPlus, ShieldCheck, Brain, Zap, BarChart3, Fingerprint, ChevronRight, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import HeroVisual from '../visuals/HeroVisual';
 
 export default function Login() {
   const router = useRouter();
@@ -109,6 +110,10 @@ export default function Login() {
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center p-6 lg:p-12 bg-[var(--surface)] selection:bg-[var(--pes-orange)] selection:text-white overflow-hidden relative">
+      
+      {/* ThreeJS Hero Visual */}
+      <HeroVisual />
+
       {/* Background Neural Network Ambient Glows */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[var(--pes-orange)]/5 blur-[120px] rounded-full animate-pulse" />
@@ -124,9 +129,9 @@ export default function Login() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="flex-1 flex flex-col justify-center text-center lg:text-left"
         >
-          <div className="inline-flex items-center gap-3 mb-10 bg-[var(--surface-container-high)] backdrop-blur-xl px-5 py-2.5 rounded-full border border-black/5 shadow-sm w-fit mx-auto lg:ml-0">
+          <div className="inline-flex items-center gap-3 mb-10 bg-white/40 backdrop-blur-xl px-5 py-2.5 rounded-full border border-black/5 shadow-sm w-fit mx-auto lg:ml-0">
             <div className="w-2 h-2 rounded-full bg-[var(--pes-orange)] animate-ping" />
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[var(--text-muted)]">Neural Link Active — PES EC ARC</span>
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[var(--text-muted)]">Neural Link Active — Node-01</span>
           </div>
 
           <h1 className="text-6xl lg:text-[100px] font-display font-black text-[var(--on-surface)] tracking-tighter leading-[0.85] mb-10">
@@ -134,41 +139,53 @@ export default function Login() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--pes-orange)] via-[#ff9b45] to-[var(--pes-orange)] bg-[length:200%_auto] animate-gradient-flow">Intelligence.</span>
           </h1>
 
-          <p className="text-lg lg:text-xl font-bold text-[var(--text-muted)] leading-relaxed mb-16 max-w-xl mx-auto lg:ml-0 uppercase tracking-widest">
+          <p className="text-lg lg:text-xl font-bold text-[var(--text-muted)] leading-relaxed mb-16 max-w-xl mx-auto lg:ml-0 uppercase tracking-widest opacity-80">
             The authoritative command interface for hyper-scale canteen management. Predicted stock. Intercepted risk. Absolute visibility.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto lg:ml-0">
-             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white">
-               <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Brain size={24} />
+             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
+               <div className="flex justify-between items-start mb-6">
+                 <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Brain size={24} />
+                 </div>
+                 <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">forecasting_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Forecasting Engine</h3>
-               <p className="text-xs font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Autonomous predictive matrices analyzing campus-wide behavioral data.</p>
+               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">XGBoost-LGBM Fusion Model with Adaptive Sigma uncertainty scaling.</p>
              </div>
              
-             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white">
-               <div className="w-12 h-12 rounded-2xl bg-[var(--pes-orange)]/10 text-[var(--pes-orange)] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <ShieldCheck size={24} />
+             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
+               <div className="flex justify-between items-start mb-6">
+                 <div className="w-12 h-12 rounded-2xl bg-[var(--pes-orange)]/10 text-[var(--pes-orange)] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <ShieldCheck size={24} />
+                 </div>
+                 <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">risk_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Risk Intelligence</h3>
-               <p className="text-xs font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Zero-latency threat interception protecting operational liquidity.</p>
+               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">MDP-based action approval and Workday Lockout protocols protecting liquidity.</p>
              </div>
 
-             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white">
-               <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <BarChart3 size={24} />
+             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
+               <div className="flex justify-between items-start mb-6">
+                 <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <BarChart3 size={24} />
+                 </div>
+                 <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">trend_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Telemetry Core</h3>
-               <p className="text-xs font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">High-fidelity data streams visualized through ultra-premium dashboards.</p>
+               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Fuzzy-Scout Agent fusing Continuous Weather Scaling and Calendar Pulses.</p>
              </div>
 
-             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white">
-               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Zap size={24} />
+             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
+               <div className="flex justify-between items-start mb-6">
+                 <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Zap size={24} />
+                 </div>
+                 <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">LiveExecutionPanel.tsx</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Atomic Execution</h3>
-               <p className="text-xs font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Instant barcode parsing and matrix synchronization for rapid intake.</p>
+               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Zero-Latency Matrix Architect synchronizing multi-agent consensus thoughts.</p>
              </div>
           </div>
         </motion.div>

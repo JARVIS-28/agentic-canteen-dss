@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { isAuthenticated } from "@/lib/admin";
 import { ArrowRight, Utensils, Shield, Sparkles, TrendingUp, Layers, ChefHat } from "lucide-react";
 import { motion, useScroll, useTransform, type Variants } from "framer-motion";
+import HeroVisual from "@/components/visuals/HeroVisual";
 
 export default function HomePage() {
   const router = useRouter();
@@ -46,15 +47,42 @@ export default function HomePage() {
   };
 
   const features = [
-    { title: "Predictive Forecasting", desc: "AI models trained on historic sales to accurately predict future demand and reduce daily waste.", icon: TrendingUp, color: "#ee8326" },
-    { title: "Financial Shield", desc: "Real-time liquidity analysis blocking risky procurements and ensuring stable daily cash flow.", icon: Shield, color: "#374175" },
-    { title: "Smart Portions", desc: "Track exact portion sizes and ingredient consumption to optimize recipes automatically.", icon: Utensils, color: "#8b8eaa" },
-    { title: "Automated Supply", desc: "Seamless generation of purchase orders directly correlated to expected weekly output.", icon: Layers, color: "#ee8326" }
+    { 
+      title: "Forecasting Engine", 
+      desc: "XGBoost + LightGBM Fusion Model predicting demand with Bayesian Newsvendor logic and Adaptive Sigma uncertainty scaling.", 
+      icon: TrendingUp, 
+      color: "#ee8326",
+      ref: "forecasting_agent.py"
+    },
+    { 
+      title: "Risk Intelligence", 
+      desc: "Real-time Liquidity Guarding via MDP-based action approval and Workday Lockout protocols to protect operational cash flow.", 
+      icon: Shield, 
+      color: "#374175",
+      ref: "risk_agent.py"
+    },
+    { 
+      title: "Telemetry Core", 
+      desc: "Fuzzy-Scout Trend Agent fusing Continuous Weather Scaling (+8%/°C) and Academic Calendar Pulses for high-fidelity demand sensing.", 
+      icon: Utensils, 
+      color: "#8b8eaa",
+      ref: "trend_agent.py"
+    },
+    { 
+      title: "Atomic Execution", 
+      desc: "Zero-Latency Matrix Architect synchronizing neural agent thoughts for rapid operational intake and instant barcode parsing.", 
+      icon: Layers, 
+      color: "#ee8326",
+      ref: "LiveExecutionPanel.tsx"
+    }
   ];
 
   return (
     <div ref={containerRef} className="min-h-screen bg-[var(--bg-main)] font-sans overflow-x-hidden selection:bg-[var(--pes-orange)] selection:text-white relative">
       
+      {/* ThreeJS Hero Visual */}
+      <HeroVisual />
+
       {/* Animated Background Blobs */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         <motion.div 
@@ -98,7 +126,7 @@ export default function HomePage() {
         <motion.div style={{ y: yHero, opacity: opacityHero }} className="max-w-7xl pt-20">
           <motion.div custom={1} initial="hidden" animate="visible" variants={textVariants} className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-[var(--pes-blue)]/20 bg-white/40 backdrop-blur-xl mb-8 text-[var(--pes-blue-dark)] font-black text-xs uppercase tracking-[0.2em]">
             <Sparkles size={16} className="text-[var(--pes-orange)]" /> 
-            Version 2.0
+            Version 2.0 — Neural Link
           </motion.div>
           
           <div className="overflow-hidden mb-6">
@@ -109,7 +137,7 @@ export default function HomePage() {
           </div>
 
           <motion.p custom={3} initial="hidden" animate="visible" variants={textVariants} className="text-[var(--text-secondary)] text-lg md:text-2xl font-medium max-w-2xl leading-relaxed mt-8 mb-12 mix-blend-color-burn">
-            Elevating campus dining through autonomous predictive modeling. We don&apos;t just manage stock; we orchestrate it.
+            Elevating campus dining through autonomous predictive modeling. Driven by XGBoost-LGBM fusion nodes and real-time telemetry.
           </motion.p>
 
           <motion.button 
@@ -133,7 +161,7 @@ export default function HomePage() {
               Precision in every <span className="text-[#ee8326]">ingredient.</span>
             </h2>
             <p className="max-w-sm text-[#8b8eaa] text-lg font-medium">
-              A sophisticated engine designed to eliminate manual tracking and enforce data-driven procurement.
+              A multi-agent DSS architecture designed to eliminate waste and enforce data-driven procurement.
             </p>
           </div>
 
@@ -148,8 +176,11 @@ export default function HomePage() {
                 className="group p-10 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-colors duration-500 overflow-hidden relative"
               >
                 <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-white/5 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-                <f.icon size={48} color={f.color} className="mb-8 p-3 rounded-2xl bg-white/10 group-hover:scale-110 transition-transform duration-500" />
-                <h3 className="text-2xl md:text-3xl font-bold mb-4">{f.title}</h3>
+                <div className="flex justify-between items-start mb-8">
+                  <f.icon size={48} color={f.color} className="p-3 rounded-2xl bg-white/10 group-hover:scale-110 transition-transform duration-500" />
+                  <span className="text-[10px] font-black text-white/20 uppercase tracking-widest">{f.ref}</span>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 uppercase tracking-tight">{f.title}</h3>
                 <p className="text-[#8b8eaa] font-medium leading-relaxed text-lg">{f.desc}</p>
               </motion.div>
             ))}
