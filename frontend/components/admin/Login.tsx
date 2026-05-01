@@ -109,7 +109,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center p-6 lg:p-12 bg-[var(--surface)] selection:bg-[var(--pes-orange)] selection:text-white overflow-hidden relative">
+    <div className="min-h-screen w-full flex items-center justify-center p-4 lg:p-6 bg-[var(--surface)] selection:bg-[var(--pes-orange)] selection:text-white overflow-hidden relative">
       
       {/* ThreeJS Hero Visual */}
       <HeroVisual />
@@ -129,63 +129,63 @@ export default function Login() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="flex-1 flex flex-col justify-center text-center lg:text-left"
         >
-          <div className="inline-flex items-center gap-3 mb-10 bg-white/40 backdrop-blur-xl px-5 py-2.5 rounded-full border border-black/5 shadow-sm w-fit mx-auto lg:ml-0">
+          <div className="inline-flex items-center gap-3 mb-6 bg-white/40 backdrop-blur-xl px-4 py-2 rounded-full border border-black/5 shadow-sm w-fit mx-auto lg:ml-0">
             <div className="w-2 h-2 rounded-full bg-[var(--pes-orange)] animate-ping" />
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[var(--text-muted)]">Neural Link Active — Node-01</span>
+            <span className="text-[9px] font-black uppercase tracking-[0.4em] text-[var(--text-muted)]">Neural Link Active — Node-01</span>
           </div>
 
-          <h1 className="text-6xl lg:text-[100px] font-display font-black text-[var(--on-surface)] tracking-tighter leading-[0.85] mb-10">
+          <h1 className="text-5xl lg:text-[72px] font-display font-black text-[var(--on-surface)] tracking-tighter leading-[0.85] mb-6">
             Design for <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--pes-orange)] via-[#ff9b45] to-[var(--pes-orange)] bg-[length:200%_auto] animate-gradient-flow">Intelligence.</span>
           </h1>
 
-          <p className="text-lg lg:text-xl font-bold text-[var(--text-muted)] leading-relaxed mb-16 max-w-xl mx-auto lg:ml-0 uppercase tracking-widest opacity-80">
+          <p className="text-base lg:text-lg font-bold text-[var(--text-muted)] leading-relaxed mb-10 max-w-xl mx-auto lg:ml-0 uppercase tracking-widest opacity-80">
             The authoritative command interface for hyper-scale canteen management. Predicted stock. Intercepted risk. Absolute visibility.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto lg:ml-0">
-             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
-               <div className="flex justify-between items-start mb-6">
-                 <div className="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Brain size={24} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto lg:ml-0">
+             <div className="glass-card !p-5 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
+               <div className="flex justify-between items-start mb-4">
+                 <div className="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Brain size={20} />
                  </div>
-                 <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">forecasting_agent.py</span>
+                 <span className="text-[7px] font-black text-black/20 uppercase tracking-widest">forecasting_agent.py</span>
                </div>
-               <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Forecasting Engine</h3>
-               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">High-precision AI predicting daily demand to optimize stock levels and minimize food waste.</p>
+               <h3 className="font-display font-black text-[var(--on-surface)] text-sm uppercase tracking-tight mb-2">Forecasting Engine</h3>
+               <p className="text-[9px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">High-precision AI predicting daily demand to optimize stock levels and minimize food waste.</p>
              </div>
              
-             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
-               <div className="flex justify-between items-start mb-6">
-                 <div className="w-12 h-12 rounded-2xl bg-[var(--pes-orange)]/10 text-[var(--pes-orange)] flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <ShieldCheck size={24} />
+             <div className="glass-card !p-5 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
+               <div className="flex justify-between items-start mb-4">
+                 <div className="w-10 h-10 rounded-xl bg-[var(--pes-orange)]/10 text-[var(--pes-orange)] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <ShieldCheck size={20} />
                  </div>
-                 <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">risk_agent.py</span>
+                 <span className="text-[7px] font-black text-black/20 uppercase tracking-widest">risk_agent.py</span>
                </div>
-               <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Risk Intelligence</h3>
-               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Automated financial guard blocking risky procurement to ensure stable operational cash flow.</p>
+               <h3 className="font-display font-black text-[var(--on-surface)] text-sm uppercase tracking-tight mb-2">Risk Intelligence</h3>
+               <p className="text-[9px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Automated financial guard blocking risky procurement to ensure stable operational cash flow.</p>
              </div>
 
-             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
-               <div className="flex justify-between items-start mb-6">
-                 <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <BarChart3 size={24} />
+             <div className="glass-card !p-5 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
+               <div className="flex justify-between items-start mb-4">
+                 <div className="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <BarChart3 size={20} />
                  </div>
-                 <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">trend_agent.py</span>
+                 <span className="text-[7px] font-black text-black/20 uppercase tracking-widest">trend_agent.py</span>
                </div>
-               <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Telemetry Core</h3>
-               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Smart signal scout tracking weather and campus events for hyper-accurate demand sensing.</p>
+               <h3 className="font-display font-black text-[var(--on-surface)] text-sm uppercase tracking-tight mb-2">Telemetry Core</h3>
+               <p className="text-[9px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Smart signal scout tracking weather and campus events for hyper-accurate demand sensing.</p>
              </div>
 
-             <div className="glass-card !p-8 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
-               <div className="flex justify-between items-start mb-6">
-                 <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <Zap size={24} />
+             <div className="glass-card !p-5 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
+               <div className="flex justify-between items-start mb-4">
+                 <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Zap size={20} />
                  </div>
-                 <span className="text-[8px] font-black text-black/20 uppercase tracking-widest">LiveExecutionPanel.tsx</span>
+                 <span className="text-[7px] font-black text-black/20 uppercase tracking-widest">LiveExecutionPanel.tsx</span>
                </div>
-               <h3 className="font-display font-black text-[var(--on-surface)] text-lg uppercase tracking-tight mb-3">Atomic Execution</h3>
-               <p className="text-[10px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Real-time architect synchronizing inventory and barcode parsing for instant operational updates.</p>
+               <h3 className="font-display font-black text-[var(--on-surface)] text-sm uppercase tracking-tight mb-2">Atomic Execution</h3>
+               <p className="text-[9px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Real-time architect synchronizing inventory and barcode parsing for instant operational updates.</p>
              </div>
           </div>
         </motion.div>
@@ -197,34 +197,34 @@ export default function Login() {
           transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="w-full lg:w-[500px] shrink-0"
         >
-          <div className="glass-card !p-12 relative overflow-hidden shadow-2xl border-black/5 bg-white">
+          <div className="glass-card !p-8 relative overflow-hidden shadow-2xl border-black/5 bg-white">
             {/* Focal Point Glow */}
             <div className="absolute -top-40 -right-40 w-80 h-80 bg-[var(--pes-orange)]/5 blur-[100px] rounded-full" />
             
             <div className="relative z-10">
               {/* Authentication Mode Switch */}
-              <div className="flex p-1.5 bg-slate-100 backdrop-blur-2xl rounded-[24px] mb-12 border border-black/5">
+              <div className="flex p-1 bg-slate-100 backdrop-blur-2xl rounded-[20px] mb-8 border border-black/5">
                 <button 
                   onClick={switchToLogin}
-                  className={`flex-1 flex items-center justify-center gap-3 py-4 rounded-[20px] text-[10px] font-black uppercase tracking-widest transition-all duration-500 ${mode === 'login' ? 'bg-white text-[var(--on-surface)] shadow-lg scale-105' : 'text-[var(--text-muted)] hover:text-[var(--on-surface)]'}`}
+                  className={`flex-1 flex items-center justify-center gap-3 py-3 rounded-[16px] text-[10px] font-black uppercase tracking-widest transition-all duration-500 ${mode === 'login' ? 'bg-white text-[var(--on-surface)] shadow-md scale-105' : 'text-[var(--text-muted)] hover:text-[var(--on-surface)]'}`}
                 >
                   <Fingerprint size={14} className={mode === 'login' ? 'text-[var(--pes-orange)]' : ''} />
                   Authorize
                 </button>
                 <button 
                   onClick={switchToSignup}
-                  className={`flex-1 flex items-center justify-center gap-3 py-4 rounded-[20px] text-[10px] font-black uppercase tracking-widest transition-all duration-500 ${mode === 'signup' ? 'bg-white text-[var(--on-surface)] shadow-lg scale-105' : 'text-[var(--text-muted)] hover:text-[var(--on-surface)]'}`}
+                  className={`flex-1 flex items-center justify-center gap-3 py-3 rounded-[16px] text-[10px] font-black uppercase tracking-widest transition-all duration-500 ${mode === 'signup' ? 'bg-white text-[var(--on-surface)] shadow-md scale-105' : 'text-[var(--text-muted)] hover:text-[var(--on-surface)]'}`}
                 >
                   <UserPlus size={14} className={mode === 'signup' ? 'text-[var(--pes-orange)]' : ''} />
                   Provision
                 </button>
               </div>
 
-              <div className="mb-10 text-center lg:text-left">
-                <h2 className="text-4xl font-display font-black text-[var(--on-surface)] tracking-tighter uppercase leading-none mb-3">
+              <div className="mb-6 text-center lg:text-left">
+                <h2 className="text-3xl font-display font-black text-[var(--on-surface)] tracking-tighter uppercase leading-none mb-2">
                   {mode === 'login' ? 'Identity Verification' : 'Node Deployment'}
                 </h2>
-                <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.3em]">
+                <p className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-[0.3em]">
                   {mode === 'login' ? 'Insert credentials to engage command hub' : 'Register management identity into the network'}
                 </p>
               </div>
@@ -237,65 +237,65 @@ export default function Login() {
                   </div>
                 )}
                 {mode === 'signup' && (
-                  <div className="grid grid-cols-1 gap-6 animate-in slide-in-from-bottom-4 duration-500">
-                    <div className="space-y-3">
-                      <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Descriptor (Full Name)</label>
+                  <div className="grid grid-cols-1 gap-4 animate-in slide-in-from-bottom-4 duration-500">
+                    <div className="space-y-2">
+                      <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Descriptor (Full Name)</label>
                       <input
                         value={fullName}
                         onChange={e => setFullName(e.target.value)}
                         type="text"
                         placeholder="e.g. ASHA RAO"
-                        className="input-field w-full !bg-slate-50 !py-5 uppercase placeholder:text-slate-300 border-slate-200"
+                        className="input-field w-full !bg-slate-50 !py-3.5 uppercase placeholder:text-slate-300 border-slate-200 text-xs"
                       />
                     </div>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-3">
-                        <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Unit ID</label>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-2">
+                        <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Unit ID</label>
                         <input
                           value={canteenName}
                           onChange={e => setCanteenName(e.target.value)}
                           type="text"
                           placeholder="e.g. ARCADE-01"
-                          className="input-field w-full !bg-slate-50 !py-5 uppercase placeholder:text-slate-300 border-slate-200"
+                          className="input-field w-full !bg-slate-50 !py-3.5 uppercase placeholder:text-slate-300 border-slate-200 text-xs"
                         />
                       </div>
-                      <div className="space-y-3">
-                        <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Campus</label>
+                      <div className="space-y-2">
+                        <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Campus</label>
                         <input
                           value={collegeName}
                           onChange={e => setCollegeName(e.target.value)}
                           type="text"
                           placeholder="PES EC"
-                          className="input-field w-full !bg-slate-50 !py-5 uppercase placeholder:text-slate-300 border-slate-200"
+                          className="input-field w-full !bg-slate-50 !py-3.5 uppercase placeholder:text-slate-300 border-slate-200 text-xs"
                         />
                       </div>
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-3">
-                        <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">City Focus</label>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-2">
+                        <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">City Focus</label>
                         <input
                           value={city}
                           onChange={e => setCity(e.target.value)}
                           type="text"
                           placeholder="BENGALURU"
-                          className="input-field w-full !bg-slate-50 !py-5 uppercase placeholder:text-slate-300 border-slate-200"
+                          className="input-field w-full !bg-slate-50 !py-3.5 uppercase placeholder:text-slate-300 border-slate-200 text-xs"
                         />
                       </div>
-                      <div className="space-y-3">
-                        <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Treasury Alpha (Cash)</label>
+                      <div className="space-y-2">
+                        <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Treasury Alpha</label>
                         <input
                           value={cashOnHand}
                           onChange={e => setCashOnHand(Number(e.target.value))}
                           type="number"
                           placeholder="5000"
-                          className="input-field w-full !bg-slate-50 !py-5 uppercase placeholder:text-slate-300 border-slate-200"
+                          className="input-field w-full !bg-slate-50 !py-3.5 uppercase placeholder:text-slate-300 border-slate-200 text-xs"
                         />
                       </div>
                     </div>
 
-                    <div className="space-y-3">
-                      <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Linguistic Protocol</label>
+                    <div className="space-y-2">
+                      <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Linguistic Protocol</label>
                       <div className="flex gap-2">
                         {['english', 'hinglish', 'hindi'].map(lang => (
                           <button
@@ -303,7 +303,7 @@ export default function Login() {
                             type="button"
                             onClick={() => setLanguage(lang as any)}
                             className={cn(
-                              "flex-1 py-4 rounded-xl text-[9px] font-black uppercase tracking-widest border transition-all",
+                              "flex-1 py-2.5 rounded-lg text-[8px] font-black uppercase tracking-widest border transition-all",
                               language === lang ? "bg-slate-900 text-white border-slate-900" : "bg-slate-50 text-[var(--text-muted)] border-slate-100 hover:border-slate-200"
                             )}
                           >
@@ -315,26 +315,26 @@ export default function Login() {
                   </div>
                 )}
                 
-                <div className="space-y-3">
-                  <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Communication Vector (Email)</label>
+                <div className="space-y-2">
+                  <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Communication Vector (Email)</label>
                   <input
                     value={mode === 'login' ? loginEmail : signupEmail}
                     onChange={e => mode === 'login' ? setLoginEmail(e.target.value) : setSignupEmail(e.target.value)}
                     type="email"
                     placeholder="manager@pes.edu"
-                    className="input-field w-full !bg-slate-50 !py-5 border-slate-200"
+                    className="input-field w-full !bg-slate-50 !py-3.5 border-slate-200 text-xs"
                     autoComplete={mode === 'login' ? "email" : "off"}
                   />
                 </div>
                 
-                <div className="space-y-3">
-                  <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Neural Key (Password)</label>
+                <div className="space-y-2">
+                  <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Neural Key (Password)</label>
                   <input
                     value={mode === 'login' ? loginPassword : signupPassword}
                     onChange={e => mode === 'login' ? setLoginPassword(e.target.value) : setSignupPassword(e.target.value)}
                     type="password"
                     placeholder="••••••••"
-                    className="input-field w-full !bg-slate-50 !py-5 border-slate-200"
+                    className="input-field w-full !bg-slate-50 !py-3.5 border-slate-200 text-xs"
                     autoComplete={mode === 'login' ? "current-password" : "new-password"}
                   />
                 </div>
@@ -364,15 +364,15 @@ export default function Login() {
                 <button 
                   type="submit" 
                   disabled={loading}
-                  className="group relative w-full bg-[var(--pes-orange)] text-white py-6 rounded-[24px] font-black text-[11px] uppercase tracking-[0.4em] shadow-2xl shadow-orange-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 mt-4 overflow-hidden"
+                  className="group relative w-full bg-[var(--pes-orange)] text-white py-4 rounded-[20px] font-black text-[10px] uppercase tracking-[0.4em] shadow-2xl shadow-orange-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 mt-2 overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-3">
                     {loading ? (
-                      <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      <div className="w-3 h-3 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                     ) : (
                       <>
                         {mode === 'login' ? 'ENGAGE SYSTEM' : 'CORE INJECTION'}
-                        <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                        <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
                       </>
                     )}
                   </span>

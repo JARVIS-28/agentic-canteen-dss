@@ -48,7 +48,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
 
   const handleLogout = async () => {
     await logout().catch(() => {});
-    router.push("/admin");
+    router.push("/");
   };
 
   useEffect(() => {
