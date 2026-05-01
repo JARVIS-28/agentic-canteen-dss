@@ -127,18 +127,18 @@ export default function DashboardShell({ children }: { children: React.ReactNode
       
       {/* Sidebar - Integrated High-End Nav */}
       <aside className={cn(
-        "fixed inset-y-0 left-0 z-50 w-72 bg-[var(--surface-container-low)] border-r border-black/5 transition-transform duration-500 ease-[0.16,1,0.3,1] lg:static lg:translate-x-0 shrink-0 shadow-2xl lg:shadow-none",
+        "fixed inset-y-0 left-0 z-50 w-64 bg-[var(--surface-container-low)] border-r border-black/5 transition-transform duration-500 ease-[0.16,1,0.3,1] lg:static lg:translate-x-0 shrink-0 shadow-2xl lg:shadow-none",
         isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
       )}>
         <div className="flex flex-col h-full overflow-hidden">
           <div className="p-8 pb-12 flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-[var(--pes-orange)] rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg">
+              <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-black text-lg shadow-lg">
                 IQ
               </div>
               <div className="leading-none">
-                <p className="font-display font-black text-[var(--on-surface)] tracking-tighter text-2xl uppercase">Canteen IQ</p>
-                <p className="text-xs font-black text-[var(--text-muted)] uppercase tracking-[0.3em] mt-1">Intelligence Core</p>
+                <p className="font-display font-black text-[var(--on-surface)] tracking-tighter text-xl uppercase">Canteen IQ</p>
+                <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.3em] mt-1">Core</p>
               </div>
             </div>
             <button onClick={() => setIsMobileMenuOpen(false)} className="lg:hidden p-2 text-slate-400 hover:text-[var(--pes-orange)] transition-colors">

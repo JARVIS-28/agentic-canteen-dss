@@ -34,14 +34,14 @@ function AnimatedNode() {
       <Float speed={2} rotationIntensity={1} floatIntensity={2}>
         <Sphere args={[1.5, 64, 64]} ref={meshRef}>
           <MeshDistortMaterial
-            color="#ee8326"
+            color="#6366f1"
             attach="material"
-            distort={0.4}
-            speed={2}
-            roughness={0.2}
-            metalness={0.8}
-            emissive="#ee8326"
-            emissiveIntensity={0.5}
+            distort={0.3}
+            speed={1.5}
+            roughness={0.5}
+            metalness={0.5}
+            emissive="#6366f1"
+            emissiveIntensity={0.2}
           />
         </Sphere>
       </Float>
@@ -65,8 +65,8 @@ export default function HeroVisual() {
       <Canvas>
         <PerspectiveCamera makeDefault position={[0, 0, 5]} />
         <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} intensity={1} color="#ee8326" />
-        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#374175" />
+        <pointLight position={[10, 10, 10]} intensity={1} color="#6366f1" />
+        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#cbd5e1" />
         <spotLight position={[0, 5, 0]} intensity={1.5} angle={0.3} penumbra={1} castShadow />
         <AnimatedNode />
       </Canvas>

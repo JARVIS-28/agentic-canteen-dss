@@ -46,6 +46,11 @@ export default function HomePage() {
     })
   };
 
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: EASE_OUT } }
+  };
+
   const features = [
     { 
       title: "Forecasting Engine", 
@@ -78,24 +83,18 @@ export default function HomePage() {
   ];
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-[var(--bg-main)] font-sans overflow-x-hidden selection:bg-[var(--pes-orange)] selection:text-white relative">
+    <div ref={containerRef} className="min-h-screen bg-[#fcfcfd] font-sans overflow-hidden selection:bg-indigo-500 selection:text-white relative">
+      {/* Sophisticated Background Grid */}
+      <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" 
+           style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, black 1px, transparent 0)', backgroundSize: '40px 40px' }}>
+      </div>
+      
+      {/* Soft Ambient Depth */}
+      <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-indigo-500/[0.05] blur-[160px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-slate-400/[0.05] blur-[160px] rounded-full pointer-events-none" />
       
       {/* ThreeJS Hero Visual */}
       <HeroVisual />
-
-      {/* Animated Background Blobs */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <motion.div 
-          animate={{ x: [0, 50, 0], y: [0, -30, 0], scale: [1, 1.1, 1] }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[-20%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-[var(--pes-orange)]/10 blur-[140px]" 
-        />
-        <motion.div 
-          animate={{ x: [0, -40, 0], y: [0, 50, 0], scale: [1, 1.2, 1] }}
-          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          className="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-[var(--pes-blue)]/5 blur-[150px]" 
-        />
-      </div>
 
       {/* Navigation */}
       <motion.nav 
@@ -104,17 +103,17 @@ export default function HomePage() {
         animate="visible"
         className="fixed top-0 left-0 right-0 p-6 md:p-10 flex justify-between items-center z-50 mix-blend-difference"
       >
-        <div className="flex items-center gap-4 text-white">
-          <div className="w-12 h-12 bg-[var(--pes-orange)] text-white rounded-xl flex items-center justify-center font-black text-xl shadow-lg shadow-[var(--pes-orange)]/20">
+        <div className="flex items-center gap-4 text-black">
+          <div className="w-10 h-10 bg-black text-white rounded-xl flex items-center justify-center font-black text-lg shadow-xl shadow-black/5">
             IQ
           </div>
-          <span className="font-display font-black tracking-tighter text-3xl hidden sm:block">Canteen IQ</span>
+          <span className="font-display font-black tracking-tighter text-2xl hidden sm:block uppercase">Canteen IQ</span>
         </div>
         <button 
           onClick={handleAction}
           className="group relative px-6 md:px-8 py-3 rounded-full bg-white text-black font-semibold text-sm uppercase tracking-widest overflow-hidden transition-all hover:scale-105"
         >
-          <div className="absolute inset-0 bg-[#ee8326] translate-x-[-100%] group-hover:translate-x-[0%] transition-transform duration-500 ease-[0.16,1,0.3,1] z-0" />
+          <div className="absolute inset-0 bg-slate-900 translate-x-[-100%] group-hover:translate-x-[0%] transition-transform duration-500 ease-[0.16,1,0.3,1] z-0" />
           <span className="relative z-10 group-hover:text-white transition-colors duration-300">
             {isAuth ? "Dashboard" : "Login"}
           </span>
@@ -130,9 +129,12 @@ export default function HomePage() {
           </motion.div>
           
           <div className="overflow-hidden mb-6">
-            <motion.h1 custom={2} initial="hidden" animate="visible" variants={textVariants} className="text-[10vw] md:text-7xl lg:text-8xl font-black text-[var(--pes-blue-dark)] leading-[0.95] tracking-tighter uppercase">
+            <motion.p custom={3} initial="hidden" animate="visible" variants={textVariants} className="text-xs md:text-sm font-bold text-black/40 mb-10 max-w-lg leading-relaxed uppercase tracking-[0.3em]">
+              The authoritative command interface for hyper-scale canteen management. Predicted stock. Intercepted risk. Absolute visibility.
+            </motion.p>
+            <motion.h1 custom={2} initial="hidden" animate="visible" variants={textVariants} className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-[0.95] tracking-tighter uppercase">
               Intelligent <br/>
-              <span className="text-[var(--pes-orange)] italic pr-4">Canteen</span> OS.
+              <span className="text-indigo-600 italic pr-4">Canteen</span> OS.
             </motion.h1>
           </div>
 
@@ -192,14 +194,14 @@ export default function HomePage() {
       <section className="relative z-20 bg-[var(--pes-blue-dark)] pb-32">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
           <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            variants={itemVariants}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="w-full bg-[#ee8326] text-white rounded-[3rem] p-12 md:p-24 flex flex-col items-center text-center relative overflow-hidden"
+            className="w-full bg-slate-950 text-white rounded-[2rem] p-10 md:p-16 flex flex-col items-center text-center relative overflow-hidden shadow-2xl"
           >
             <ChefHat size={120} className="absolute top-[-20%] right-[-5%] text-white/10 rotate-[15deg] pointer-events-none" />
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 tracking-tighter leading-none mt-20 md:mt-0 uppercase">
+            <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter leading-none uppercase">
               Get Smarter.
             </h2>
             <button 
