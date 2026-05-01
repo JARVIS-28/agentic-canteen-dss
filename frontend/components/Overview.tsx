@@ -113,12 +113,12 @@ export default function Overview({ setPage }: OverviewProps) {
               <div className="absolute top-0 right-0 w-24 h-24 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                 style={{ background: `radial-gradient(circle, ${m.bg} 0%, transparent 70%)`, transform: "translate(30%, -30%)" }} />
               <div className="flex items-center justify-between mb-4">
-                <IconDescriptionPopover label={m.label} description={m.desc} align="start"
-                  triggerClassName="w-9 h-9 rounded-xl flex items-center justify-center border border-[var(--border-base)] transition-transform duration-300 group-hover:scale-110"
-                  style={{ background: m.bg }}
-                >
-                  <Icon size={17} style={{ color: m.color }} />
-                </IconDescriptionPopover>
+                <div className="w-9 h-9 rounded-xl flex items-center justify-center border border-[var(--border-base)] transition-transform duration-300 group-hover:scale-110 shrink-0"
+                  style={{ background: m.bg }}>
+                  <IconDescriptionPopover label={m.label} description={m.desc} align="start">
+                    <Icon size={17} style={{ color: m.color }} />
+                  </IconDescriptionPopover>
+                </div>
                 <div className="px-2 py-0.5 rounded-lg text-[9px] font-black uppercase tracking-widest" style={{ background: "var(--bg-tonal)", color: "var(--text-muted)" }}>
                   {m.trend}
                 </div>
