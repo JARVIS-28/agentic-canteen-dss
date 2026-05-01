@@ -131,15 +131,15 @@ export default function Login() {
         >
           <div className="inline-flex items-center gap-3 mb-6 bg-white/40 backdrop-blur-xl px-4 py-2 rounded-full border border-black/5 shadow-sm w-fit mx-auto lg:ml-0">
             <div className="w-2 h-2 rounded-full bg-[var(--pes-orange)] animate-ping" />
-            <span className="text-[9px] font-black uppercase tracking-[0.4em] text-[var(--text-muted)]">Neural Link Active — Node-01</span>
+            <span className="text-xs font-black uppercase tracking-[0.4em] text-[var(--text-muted)]">Neural Link Active — Node-01</span>
           </div>
 
-          <h1 className="text-5xl lg:text-[72px] font-display font-black text-[var(--on-surface)] tracking-tighter leading-[0.85] mb-6">
-            Design for <br/>
+          <h1 className="text-5xl lg:text-7xl font-display font-black text-[var(--on-surface)] tracking-tighter leading-[0.9] mb-6 uppercase">
+            Canteen <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--pes-orange)] via-[#ff9b45] to-[var(--pes-orange)] bg-[length:200%_auto] animate-gradient-flow">Intelligence.</span>
           </h1>
 
-          <p className="text-base lg:text-lg font-bold text-[var(--text-muted)] leading-relaxed mb-10 max-w-xl mx-auto lg:ml-0 uppercase tracking-widest opacity-80">
+          <p className="text-base font-bold text-[var(--text-muted)] leading-relaxed mb-10 max-w-xl mx-auto lg:ml-0 uppercase tracking-widest opacity-80">
             The authoritative command interface for hyper-scale canteen management. Predicted stock. Intercepted risk. Absolute visibility.
           </p>
 
@@ -149,10 +149,10 @@ export default function Login() {
                  <div className="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Brain size={20} />
                  </div>
-                 <span className="text-[7px] font-black text-black/20 uppercase tracking-widest">forecasting_agent.py</span>
+                 <span className="text-[10px] font-black text-black/20 uppercase tracking-widest">forecasting_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-sm uppercase tracking-tight mb-2">Forecasting Engine</h3>
-               <p className="text-[9px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">High-precision AI predicting daily demand to optimize stock levels and minimize food waste.</p>
+               <p className="text-xs font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">High-precision AI predicting daily demand to optimize stock levels and minimize food waste.</p>
              </div>
              
              <div className="glass-card !p-5 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
@@ -160,10 +160,10 @@ export default function Login() {
                  <div className="w-10 h-10 rounded-xl bg-[var(--pes-orange)]/10 text-[var(--pes-orange)] flex items-center justify-center group-hover:scale-110 transition-transform">
                     <ShieldCheck size={20} />
                  </div>
-                 <span className="text-[7px] font-black text-black/20 uppercase tracking-widest">risk_agent.py</span>
+                 <span className="text-[10px] font-black text-black/20 uppercase tracking-widest">risk_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-sm uppercase tracking-tight mb-2">Risk Intelligence</h3>
-               <p className="text-[9px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Automated financial guard blocking risky procurement to ensure stable operational cash flow.</p>
+               <p className="text-xs font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Automated financial guard blocking risky procurement to ensure stable operational cash flow.</p>
              </div>
 
              <div className="glass-card !p-5 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
@@ -171,10 +171,10 @@ export default function Login() {
                  <div className="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <BarChart3 size={20} />
                  </div>
-                 <span className="text-[7px] font-black text-black/20 uppercase tracking-widest">trend_agent.py</span>
+                 <span className="text-[10px] font-black text-black/20 uppercase tracking-widest">trend_agent.py</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-sm uppercase tracking-tight mb-2">Telemetry Core</h3>
-               <p className="text-[9px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Smart signal scout tracking weather and campus events for hyper-accurate demand sensing.</p>
+               <p className="text-xs font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Smart signal scout tracking weather and campus events for hyper-accurate demand sensing.</p>
              </div>
 
              <div className="glass-card !p-5 group hover:!border-[var(--pes-orange)]/20 transition-all duration-700 bg-white/60 backdrop-blur-md">
@@ -182,10 +182,10 @@ export default function Login() {
                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Zap size={20} />
                  </div>
-                 <span className="text-[7px] font-black text-black/20 uppercase tracking-widest">LiveExecutionPanel.tsx</span>
+                 <span className="text-[10px] font-black text-black/20 uppercase tracking-widest">LiveExecutionPanel.tsx</span>
                </div>
                <h3 className="font-display font-black text-[var(--on-surface)] text-sm uppercase tracking-tight mb-2">Atomic Execution</h3>
-               <p className="text-[9px] font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Real-time architect synchronizing inventory and barcode parsing for instant operational updates.</p>
+               <p className="text-xs font-bold text-[var(--text-muted)] leading-relaxed uppercase tracking-widest">Real-time architect synchronizing inventory and barcode parsing for instant operational updates.</p>
              </div>
           </div>
         </motion.div>
@@ -224,7 +224,7 @@ export default function Login() {
                 <h2 className="text-3xl font-display font-black text-[var(--on-surface)] tracking-tighter uppercase leading-none mb-2">
                   {mode === 'login' ? 'Identity Verification' : 'Node Deployment'}
                 </h2>
-                <p className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-[0.3em]">
+                <p className="text-xs font-black text-[var(--text-muted)] uppercase tracking-[0.3em]">
                   {mode === 'login' ? 'Insert credentials to engage command hub' : 'Register management identity into the network'}
                 </p>
               </div>
@@ -239,7 +239,7 @@ export default function Login() {
                 {mode === 'signup' && (
                   <div className="grid grid-cols-1 gap-4 animate-in slide-in-from-bottom-4 duration-500">
                     <div className="space-y-2">
-                      <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Descriptor (Full Name)</label>
+                      <label className="text-xs font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Descriptor (Full Name)</label>
                       <input
                         value={fullName}
                         onChange={e => setFullName(e.target.value)}
@@ -303,7 +303,7 @@ export default function Login() {
                             type="button"
                             onClick={() => setLanguage(lang as any)}
                             className={cn(
-                              "flex-1 py-2.5 rounded-lg text-[8px] font-black uppercase tracking-widest border transition-all",
+                              "flex-1 py-2.5 rounded-lg text-xs font-black uppercase tracking-widest border transition-all",
                               language === lang ? "bg-slate-900 text-white border-slate-900" : "bg-slate-50 text-[var(--text-muted)] border-slate-100 hover:border-slate-200"
                             )}
                           >
@@ -316,7 +316,7 @@ export default function Login() {
                 )}
                 
                 <div className="space-y-2">
-                  <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Communication Vector (Email)</label>
+                  <label className="text-xs font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Communication Vector (Email)</label>
                   <input
                     value={mode === 'login' ? loginEmail : signupEmail}
                     onChange={e => mode === 'login' ? setLoginEmail(e.target.value) : setSignupEmail(e.target.value)}
@@ -328,7 +328,7 @@ export default function Login() {
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Neural Key (Password)</label>
+                  <label className="text-xs font-black text-[var(--text-muted)] uppercase tracking-widest ml-2">Neural Key (Password)</label>
                   <input
                     value={mode === 'login' ? loginPassword : signupPassword}
                     onChange={e => mode === 'login' ? setLoginPassword(e.target.value) : setSignupPassword(e.target.value)}

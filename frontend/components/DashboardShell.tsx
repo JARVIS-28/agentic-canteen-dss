@@ -70,7 +70,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
               id: adminData.id,
               email: adminData.email || "",
               full_name: adminData.full_name || "",
-              canteen_name: adminData.canteen_name || "PES Canteen",
+              canteen_name: adminData.canteen_name || "Canteen IQ Hub",
               college_name: adminData.college_name || "PES EC Campus",
               city: adminData.city || "BENGALURU",
               language: adminData.language || "english",
@@ -133,12 +133,12 @@ export default function DashboardShell({ children }: { children: React.ReactNode
         <div className="flex flex-col h-full overflow-hidden">
           <div className="p-8 pb-12 flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-slate-900 rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg">
-                P
+              <div className="w-12 h-12 bg-[var(--pes-orange)] rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg">
+                IQ
               </div>
               <div className="leading-none">
-                <p className="font-display font-black text-[var(--on-surface)] tracking-tighter text-2xl">CORE</p>
-                <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.3em] mt-1">Intelligence Hub</p>
+                <p className="font-display font-black text-[var(--on-surface)] tracking-tighter text-2xl uppercase">Canteen IQ</p>
+                <p className="text-xs font-black text-[var(--text-muted)] uppercase tracking-[0.3em] mt-1">Intelligence Core</p>
               </div>
             </div>
             <button onClick={() => setIsMobileMenuOpen(false)} className="lg:hidden p-2 text-slate-400 hover:text-[var(--pes-orange)] transition-colors">
@@ -178,7 +178,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
 
           <div className="p-6 mt-auto">
              <div className="section-tonal !p-6 !rounded-[24px] mb-6 bg-[var(--surface-container-high)]">
-                <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-widest mb-2">Liquidity Score</p>
+                <p className="text-xs font-black text-[var(--text-muted)] uppercase tracking-widest mb-2">Liquidity Score</p>
                 <div className="flex items-end gap-2">
                   <span className="text-2xl font-black text-[var(--on-surface)] tracking-tighter">₹{cashOnHand.toLocaleString("en-IN")}</span>
                   <span className="text-[10px] font-black text-emerald-600 mb-1">+2.4%</span>
@@ -186,7 +186,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
              </div>
 
             <button 
-              className="w-full flex items-center justify-center gap-3 px-6 py-4 text-rose-500 font-black hover:bg-rose-50 rounded-2xl transition-all duration-300 uppercase tracking-widest text-[10px] border border-transparent hover:border-rose-100" 
+              className="w-full flex items-center justify-center gap-3 px-6 py-4 text-rose-500 font-black hover:bg-rose-50 rounded-2xl transition-all duration-300 uppercase tracking-widest text-xs border border-transparent hover:border-rose-100" 
               onClick={handleLogout}
             >
               <LogOut size={16} />
@@ -246,8 +246,8 @@ export default function DashboardShell({ children }: { children: React.ReactNode
           <div className="flex items-center gap-6">
             {/* Temporal Reference */}
             <div className="hidden lg:flex flex-col items-end px-4 border-r border-black/5 leading-none">
-              <span className="text-[8px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mb-1">Temporal Sync</span>
-              <span className="text-[10px] font-black text-[var(--on-surface)] uppercase tracking-wider">
+              <span className="text-xs font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mb-1">Temporal Sync</span>
+              <span className="text-xs font-black text-[var(--on-surface)] uppercase tracking-wider">
                 {format(new Date(), "EEEE, MMM do")}
               </span>
             </div>
@@ -259,7 +259,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
                 className="flex items-center gap-4 px-6 py-3 bg-white border border-black/5 hover:border-[var(--pes-orange)]/30 rounded-2xl transition-all group shadow-sm"
               >
                 <div className="text-right">
-                  <span className="block text-[8px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] leading-none mb-1">Asset Status</span>
+                  <span className="block text-xs font-black text-[var(--text-muted)] uppercase tracking-[0.2em] leading-none mb-1">Asset Status</span>
                   <span className="block text-xl font-black text-[var(--pes-orange)] leading-none tracking-tighter">₹{cashOnHand.toLocaleString("en-IN")}</span>
                 </div>
               </button>
@@ -269,7 +269,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
                   className="absolute right-0 top-[calc(100%+12px)] w-80 clay-card !p-8 animate-in-card z-50 text-center shadow-2xl border-black/5 !bg-white"
                   onSubmit={handleCashSubmit}
                 >
-                  <label className="block text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.3em] mb-6 underline decoration-[var(--pes-orange)] decoration-2 underline-offset-4">Inject Liquidity</label>
+                  <label className="block text-xs font-black text-[var(--text-muted)] uppercase tracking-[0.3em] mb-6 underline decoration-[var(--pes-orange)] decoration-2 underline-offset-4">Inject Liquidity</label>
                   <div className="flex items-center gap-2 mb-6 bg-slate-50 rounded-2xl p-4 border border-black/5 focus-within:border-[var(--pes-orange)]/50 transition-all">
                     <span className="text-[var(--text-secondary)] font-black text-xl">₹</span>
                     <input
@@ -309,7 +309,7 @@ export default function DashboardShell({ children }: { children: React.ReactNode
                  <User size={22} className="transition-all" />
                </div>
                {/* Tooltip hint */}
-               <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 px-3 py-1 bg-slate-900 text-white text-[8px] font-black uppercase tracking-widest rounded-lg opacity-0 group-hover/user:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
+               <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 px-3 py-1 bg-slate-900 text-white text-xs font-black uppercase tracking-widest rounded-lg opacity-0 group-hover/user:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
                  Identity Node
                </span>
             </Link>

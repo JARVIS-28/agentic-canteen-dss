@@ -105,10 +105,10 @@ export default function HomePage() {
         className="fixed top-0 left-0 right-0 p-6 md:p-10 flex justify-between items-center z-50 mix-blend-difference"
       >
         <div className="flex items-center gap-4 text-white">
-          <div className="w-12 h-12 bg-white text-black rounded-lg flex items-center justify-center font-bold text-lg">
-            PES
+          <div className="w-12 h-12 bg-[var(--pes-orange)] text-white rounded-xl flex items-center justify-center font-black text-xl shadow-lg shadow-[var(--pes-orange)]/20">
+            IQ
           </div>
-          <span className="font-bold tracking-tighter text-2xl hidden sm:block">Canteen System</span>
+          <span className="font-display font-black tracking-tighter text-3xl hidden sm:block">Canteen IQ</span>
         </div>
         <button 
           onClick={handleAction}
@@ -130,9 +130,9 @@ export default function HomePage() {
           </motion.div>
           
           <div className="overflow-hidden mb-6">
-            <motion.h1 custom={2} initial="hidden" animate="visible" variants={textVariants} className="text-[12vw] sm:text-[10vw] md:text-8xl lg:text-[120px] font-black text-[var(--pes-blue-dark)] leading-[0.9] tracking-tighter">
-              Enterprise <br/>
-              <span className="text-[var(--pes-orange)] italic pr-4">Grade</span> Intelligence.
+            <motion.h1 custom={2} initial="hidden" animate="visible" variants={textVariants} className="text-[10vw] md:text-7xl lg:text-8xl font-black text-[var(--pes-blue-dark)] leading-[0.95] tracking-tighter uppercase">
+              Intelligent <br/>
+              <span className="text-[var(--pes-orange)] italic pr-4">Canteen</span> OS.
             </motion.h1>
           </div>
 
@@ -157,8 +157,8 @@ export default function HomePage() {
       <section className="relative z-20 bg-[var(--pes-blue-dark)] text-[#eae5e6] py-32 rounded-t-[3rem] shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-            <h2 className="text-5xl md:text-7xl font-black leading-none tracking-tighter max-w-2xl">
-              Precision in every <span className="text-[#ee8326]">ingredient.</span>
+            <h2 className="text-4xl md:text-6xl font-black leading-none tracking-tighter max-w-2xl uppercase">
+              Precision in every <span className="text-[#ee8326]">cycle.</span>
             </h2>
             <p className="max-w-sm text-[#8b8eaa] text-lg font-medium">
               A multi-agent DSS architecture designed to eliminate waste and enforce data-driven procurement.
@@ -199,8 +199,8 @@ export default function HomePage() {
             className="w-full bg-[#ee8326] text-white rounded-[3rem] p-12 md:p-24 flex flex-col items-center text-center relative overflow-hidden"
           >
             <ChefHat size={120} className="absolute top-[-20%] right-[-5%] text-white/10 rotate-[15deg] pointer-events-none" />
-            <h2 className="text-5xl md:text-7xl lg:text-9xl font-black mb-8 tracking-tighter leading-none mt-20 md:mt-0">
-              Ready?
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 tracking-tighter leading-none mt-20 md:mt-0 uppercase">
+              Get Smarter.
             </h2>
             <button 
               onClick={handleAction}

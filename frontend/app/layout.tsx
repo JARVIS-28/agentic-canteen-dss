@@ -13,11 +13,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "PES Canteen OS | Smart Inventory & Analytics",
+  title: "Canteen IQ | Intelligent Canteen OS",
   description:
-    "AI-powered multi-agent system helping PES University canteens optimize inventory and streamline operations.",
-  keywords: ["canteen", "inventory", "college", "AI", "PES University", "smart canteen"],
-  appleWebApp: { capable: true, statusBarStyle: "default", title: "PES Canteen OS" },
+    "Next-generation AI decision support system for campus canteens. Optimized inventory, risk mitigation, and demand forecasting.",
+  keywords: ["Canteen IQ", "canteen", "inventory", "AI", "DSS", "smart canteen"],
+  appleWebApp: { capable: true, statusBarStyle: "default", title: "Canteen IQ" },
   formatDetection: { telephone: false },
 };
 

@@ -78,7 +78,7 @@ export const useAppStore = create<AppStore>()(
       // ===== USER PROFILE INIT =====
       userId: null,
       userProfile: null,
-      shopName: "PES Canteen",
+      shopName: "Canteen IQ Hub",
       userLocation: "PES EC Campus",
       userLanguage: "english",
 
