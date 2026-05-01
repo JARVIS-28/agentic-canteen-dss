@@ -29,7 +29,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Outfit', 'Inter', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
       },
       spacing: {
         'safe-bottom': 'env(safe-area-inset-bottom, 0px)',
