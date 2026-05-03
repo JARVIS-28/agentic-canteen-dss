@@ -1,0 +1,8 @@
+--- Canteen IQ Model Performance Audit ---
+Mean Squared Error (MSE):      70.6867
+Root Mean Squared Error (RMSE): 8.4075
+F1-Score (Demand Pulse):       0.7849
+Recall (Stockout Prevention):  1.0000
+Overall Accuracy:              0.7333
+ROC-AUC Score:                 0.8719
+-------------------------------------------
