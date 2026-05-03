@@ -6,6 +6,8 @@
 !/backend/
 !/.gitignore
 !/tests/
+!/LICENSE
+
 
 # 3. Inside backend and frontend, still ignore these secrets and build files:
 .env
