@@ -249,7 +249,7 @@ export default function HomePage() {
       <section className="relative z-20 py-14 px-6 md:px-12" style={{ borderTop: "1px solid var(--border-base)", borderBottom: "1px solid var(--border-base)", background: "var(--bg-card)" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { val: "98.4%", label: "AI Accuracy" },
+            // { val: "98.4%", label: "AI Accuracy" },
             { val: "3×", label: "Agents Always Running" },
             { val: "<2s", label: "Analysis Latency" },
             { val: "∞", label: "Demand Horizon" },
